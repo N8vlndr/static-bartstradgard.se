@@ -6,11 +6,12 @@
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve",
-    "upload": ""
+    "build:prod": "ELEVENTY_ENV=production eleventy"
   },
   "author": {
     "name": "Evelien Surstedt",
-    "email": "eveliensurstedt@gmail.com" },
+    "email": "eveliensurstedt@gmail.com"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
