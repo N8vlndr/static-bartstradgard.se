@@ -1,4 +1,11 @@
+# OS generated files
 .DS_Store
 
-node_modules
-dist
+# Dependencies
+/node_modules
+
+# Build files
+/dist
+
+# VS Code
+.vscode
