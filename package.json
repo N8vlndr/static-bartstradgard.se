@@ -1,0 +1,17 @@
+{
+  "name": "recommendation-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Website for Barts Trädgårdservice AB i Osby",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "upload": ""
+  },
+  "author": {
+    "name": "Evelien Surstedt",
+    "email": "eveliensurstedt@gmail.com" },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
