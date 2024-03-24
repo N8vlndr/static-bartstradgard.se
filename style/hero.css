@@ -1,0 +1,162 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero {
+        padding: var(--sectionPadding);
+        padding-top: clamp(8rem, 10vw, 18rem);
+        position: relative;
+        z-index: 1;
+    }
+
+    #hero .container {
+        width: 100%;
+        height: 90vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero .title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 100%;
+        padding: 0 0 2rem 0;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        text-transform: capitalize;
+        border-bottom: 2px solid var(--bodyTextColorWhite);
+    }
+
+    #hero .text {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 1.95vw, 1.25rem);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        /* 464px - 622px */
+        max-width: clamp(29rem, 60vw, 38.785rem);
+        margin: 0 0 2.5rem 0;
+        color: var(--siteBackgroundColor);
+    }
+
+    #hero .button-solid {
+        font-size: 1rem;
+        font-weight: 700;
+        /* 46px - 56px */
+        line-height: clamp(2.875em, 5.5vw, 3.5em);
+        text-align: center;
+        text-decoration: none;
+        min-width: 9.375rem;
+        margin: 3rem;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        padding: 0 1.5rem;
+        color: var(--bodyTextColorWhite);
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+
+    #hero .button-solid:before {
+        content: "";
+        width: 0%;
+        height: 100%;
+        background: var(--headerColor);
+        opacity: 1;
+        border-radius: 0.25rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s;
+    }
+
+    #hero .button-solid:hover:before {
+        width: 100%;
+    }
+
+    #hero .background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    #hero .background:before {
+        /* Overlay */
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: var(--siteColorBlack);
+        opacity: .5;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+    }
+
+    #hero .background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        /* makes the top of the image start at the top of the parent */
+        object-position: top;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero .container {
+        height: 80vh;
+        margin-bottom: -4rem;
+    }
+    
+    #hero .background {
+        height: 60%;
+    }
+}
+
+/* Desktop With Parallax Effect - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero .container {
+        height: 70vh;
+    }
+
+    #hero .button-solid {
+        display: none;
+    }
+
+    #hero .background {
+        height: 80%;
+        background: url("/img/lavendelhumla.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* creates the parallax effect */
+        background-attachment: fixed;
+    }
+
+
+    #hero .background img {
+        display: none;
+    }
+}
