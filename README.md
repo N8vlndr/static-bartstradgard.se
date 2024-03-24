@@ -4,8 +4,8 @@
  # Run locally
  To run this repository you have to install 11ty and run it with:
 
--- 
+```sh
 npx @11ty/eleventy --serve 
---
+```
 
 It runs on localhost:3001
