@@ -4,9 +4,8 @@
   "version": "0.1.0",
   "description": "Website for Barts Trädgårdservice AB i Osby",
   "scripts": {
-    "build": "ELEVENTY_ENV=development eleventy",
-    "start": "eleventy --serve",
-    "build:prod": "ELEVENTY_ENV=production eleventy"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "author": {
     "name": "Evelien Surstedt",
