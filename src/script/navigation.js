@@ -1,33 +1,35 @@
 // add classes for mobile navigation toggling
-const CSbody = document.querySelector('body');
-const CSnavbarMenu = document.querySelector('#navigation');
-const CShamburgerMenu = document.querySelector('#navigation .toggle');
+const body = document.querySelector('body');
+const navbarMenu = document.querySelector('#navigation');
+const menuToggleButton = document.querySelector('#navigation .toggle');
+const ul = document.querySelector('#expanded');
+const ulExpanded = ul.getAttribute('aria-expanded');
 
-CShamburgerMenu.addEventListener('click', () => {
-    CShamburgerMenu.classList.toggle('active');
-    CSnavbarMenu.classList.toggle('active');
-    CSbody.classList.toggle('open');
-    // run the function to check the aria-expanded value
-    ariaExpanded();
+// checks whether the aria is expanded and changes it accordingly
+const toggleExpandedAria = () => {
+    if (ulExpanded === 'false') {
+        ul.setAttribute('aria-expanded', 'true');
+    } else {
+        ul.setAttribute('aria-expanded', 'false');
+    }
+};
+
+const toggleDropdownMenu = () => {
+    menuToggleButton.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+    body.classList.toggle('open');
+    toggleExpandedAria();
+};
+
+menuToggleButton.addEventListener('click', () => {
+    toggleDropdownMenu();
 });
 
-// checks the value of aria expanded on the ul and changes it accordingly whether it is expanded or not
-const ariaExpanded = () => {
-    const csUL = document.querySelector('#expanded');
-    const csExpanded = csUL.getAttribute('aria-expanded');
-
-    if (csExpanded === 'false') {
-        csUL.setAttribute('aria-expanded', 'true');
-    } else {
-        csUL.setAttribute('aria-expanded', 'false');
-    }
-}
-
-// mobile nav toggle code
-const dropDowns = Array.from(document.querySelectorAll('#navigation .dropdown'));
-for (const item of dropDowns) {
+const navLinks = Array.from(document.querySelectorAll('#expanded .li-link'));
+for (const item of navLinks) {
     const onClick = () => {
-        item.classList.toggle('active');
+        menuToggleButton.classList.contains('active') &&
+        toggleDropdownMenu();
     };
     item.addEventListener('click', onClick);
 }
