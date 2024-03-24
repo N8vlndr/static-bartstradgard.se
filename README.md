@@ -2,7 +2,7 @@
  Static website for Barts Trädgårdservice.
 
  # Run locally
- To run this repository you have to install 11ty and run it with:
+ This repository is built with Eleventy (www.11ty.dev). To run it use this command:
 
 ```sh
 npx @11ty/eleventy --serve 
