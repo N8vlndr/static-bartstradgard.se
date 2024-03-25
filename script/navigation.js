@@ -1,11 +1,9 @@
-// add classes for mobile navigation toggling
-const body = document.querySelector('body');
+let body = document.querySelector('body');
 const navbarMenu = document.querySelector('#navigation');
 const menuToggleButton = document.querySelector('#navigation .toggle');
 const ul = document.querySelector('#expanded');
 const ulExpanded = ul.getAttribute('aria-expanded');
 
-// checks whether the aria is expanded and changes it accordingly
 const toggleExpandedAria = () => {
     if (ulExpanded === 'false') {
         ul.setAttribute('aria-expanded', 'true');

@@ -5,12 +5,12 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Barts trädgårdservice</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16x16.png">
-    <link rel="manifest" href="brand/site.webmanifest">
-    <link rel="mask-icon" href="brand/safari-pinned-tab.svg" color="#93c12d">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel='apple-touch-icon' sizes='180x180' href='brand/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='brand/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='brand/favicon-16x16.png'>
+    <link rel='manifest' href='brand/site.webmanifest'>
+    <link rel='mask-icon' href='brand/safari-pinned-tab.svg' color='#93c12d'>
+    <meta name='msapplication-TileColor' content='#da532c'>
     <meta name='description' content='Allt man bör veta om Barts trädgårdservice'>
     <meta name='author' content='Evelyn Surstedt'>
 
@@ -301,43 +301,43 @@
                 <ul class='ul'>
                     <li class='li'>
                         <picture class='icon-wrapper'>
-                            <a href='tel:+46703075955' class='link' target="_blank">
+                            <a href='tel:+46703075955' class='link' target='_blank'>
                                 <img aria-hidden='true'
-                                    src='https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg'
-                                    alt='phone icon' class='icon' width='40' height='40' decoding='async'>
+                                    src='icon/phone.png'
+                                    alt='phone icon' class='icon' width='50' height='50' decoding='async'>
                             </a>
                         </picture>
                         <div class='flex-group'>
                             <span class='header'>Mobil</span>
-                            <a href='tel:+46703075955' class='link' target="_blank">070 - 3075 955
+                            <a href='tel:+46703075955' class='link' target='_blank'>070 - 3075 955
                             </a>
                         </div>
                     </li>
                     <li class='li'>
                         <picture class='icon-wrapper'>
-                            <a href='mailto:info@bartstradgard.se' class='link' target="_blank">
+                            <a href='mailto:info@bartstradgard.se' class='link' target='_blank'>
                                 <img aria-hidden='true'
-                                    src='https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg'
-                                    alt='address icon' class='icon' width='40' height='40' decoding='async'>
+                                    src='icon/email.png'
+                                    alt='address icon' class='icon' width='50' height='50' decoding='async'>
                             </a>
                         </picture>
                         <div class='flex-group'>
                             <span class='header'>Epost</span>
                             <a href='mailto:info@bartstradgard.se' class='link'
-                                target="_blank">info@bartstradgard.se</a>
+                                target='_blank'>info@bartstradgard.se</a>
                         </div>
                     </li>
                     <li class='li'>
                         <picture class='icon-wrapper'>
-                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target="_blank">
+                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target='_blank'>
                                 <img aria-hidden='true'
-                                    src='https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg'
-                                    alt='address icon' class='icon' width='40' height='40' decoding='async'>
+                                    src='icon/location.png'
+                                    alt='address icon' class='icon' width='50' height='50' decoding='async'>
                             </a>
                         </picture>
                         <div class='flex-group'>
                             <span class='header'>Adress</span>
-                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target="_blank">Östra
+                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target='_blank'>Östra
                                 Genastorp 3531, 28391
                                 Osby</a>
                         </div>
@@ -356,8 +356,8 @@
                 </p>
             </div>
             <!--Form-->
-            <form class='form' id='contact-form' action='https://api.web3forms.com/submit' method='POST'>
-                <input type="hidden" name="access_key" value="2c027a09-2495-4e7d-9174-500b17ac1a2b" />
+            <form class='form' id='contact-form' method='POST'>
+                <input type='hidden' name='access_key' value='2c027a09-2495-4e7d-9174-500b17ac1a2b' />
                 <h3 class='h3'>Ska vi kontakta dig?</h3>
                 <label for='name' class='label name'>
                     Namn
@@ -368,15 +368,18 @@
                     <input class='input' required type='email' id='email' name='email' placeholder='jag@email.com'>
                 </label>
                 <label for='phone' class='label phone'>
-                    Telefonnummer
-                    <input class='input' required type='text' id='phone' name='Telefonnummer' placeholder='010-1234567'>
+                    Telefonnummer (om du vill bli uppringd)
+                    <input class='input' type='text' id='phone' name='Telefonnummer' placeholder='010-1234567'>
                 </label>
                 <label for='message' class='label message'>
                     Meddelande (valfritt)
                     <textarea class='input textarea' name='Meddelande' id='message'
                         placeholder='Skriv dit meddelande här...'></textarea>
                 </label>
-                <button class='button-solid submit' type='submit' aria-label='Skicka'>Skicka</button>
+                <input type='checkbox' name='botcheck' id='' style='display: none;'>
+                <button class='button-solid submit' id='send-btn' type='submit' aria-label='Skicka'>Skicka
+                </button>
+                <p id='result' class='result'></p>
             </form>
         </div>
     </section>
