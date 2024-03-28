@@ -163,7 +163,7 @@
 
         .icon {
             /* 48px - 64px */
-            width: clamp(3.3rem, 5.5vw, 7.5rem);
+            width: clamp(3.3rem, 5.5vw, 5.1rem);
             height: auto;
             display: block;
         }
