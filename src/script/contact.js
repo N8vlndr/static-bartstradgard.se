@@ -7,7 +7,7 @@ contactForm.addEventListener('submit', (e) => {
     const formData = new FormData(contactForm);
     const inputsObj = Object.fromEntries(formData);
     const inputs = JSON.stringify(inputsObj);
-    sendBtn.innerHTML = 'Skickar...';
+    sendBtn.innerText = 'Skickar...';
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -21,20 +21,20 @@ contactForm.addEventListener('submit', (e) => {
             await response.json();
 
             if (response.status == 200) {
-                statusMsg.innerHTML = 'Tack för ditt meddelande! Vi återkommer så snart vi kan.';
+                statusMsg.innerText = 'Tack för ditt meddelande! Vi återkommer så snart vi kan.';
             } else {
-                statusMsg.innerHTML = 'Något gick fel. Vänligen försök igen.';
+                statusMsg.innerText = 'Något gick fel. Vänligen försök igen.';
             }
         })
         .catch(_error => {
-            statusMsg.innerHTML = 'Något gick fel. Vänligen försök igen.';
+            statusMsg.innerText = 'Något gick fel. Vänligen försök igen.';
         })
         .then( () => {
-            sendBtn.innerHTML = 'Klart!';
+            sendBtn.innerText = 'Klart!';
             setTimeout(() => {
                 contactForm.reset();
-                statusMsg.innerHTML = '';
-                sendBtn.innerHTML = 'Skicka';
+                statusMsg.innerText = '';
+                sendBtn.innerText = 'Skicka';
             }, 6000);
         });
 });
