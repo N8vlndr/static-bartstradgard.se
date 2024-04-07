@@ -44,7 +44,7 @@
         /* 464px - 622px */
         max-width: clamp(29rem, 60vw, 38.785rem);
         margin: 0 0 2.5rem 0;
-        color: var(--secondaryLight);
+        color: var(--siteBackgroundColor);
     }
 
     #hero .button-solid {
