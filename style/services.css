@@ -80,7 +80,6 @@
             height: calc(250 / 16 * 1rem);
             border-radius: calc(8 / 16 * 1rem);
             background-color: var(--primary);
-            /* clips the corners of the image */
             overflow: hidden;
             display: block;
             position: absolute;
