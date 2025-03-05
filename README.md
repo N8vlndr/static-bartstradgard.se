@@ -7,7 +7,14 @@
  To run it use this command:
 
 ```sh
-npx @11ty/eleventy --serve 
+npx run dev
 ```
 
 It runs on localhost:3001
+
+# Build for production
+If you want to build this repository run:
+
+```sh
+npx run build
+```
