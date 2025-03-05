@@ -2,6 +2,7 @@
   "name": "barts-tradgardservice-website",
   "version": "1.0.1",
   "description": "Website for Barts Trädgårdservice AB",
+  "type": "module",
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve"
@@ -10,6 +11,6 @@
     "name": "Evelyn Surstedt"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0"
   }
 }

@@ -1,4 +1,4 @@
-module.exports = eleventyConfig => {
+export default eleventyConfig => {
     eleventyConfig.addPassthroughCopy('src/brand/');
     eleventyConfig.addPassthroughCopy('src/icon/');
     eleventyConfig.addPassthroughCopy('src/img/');
