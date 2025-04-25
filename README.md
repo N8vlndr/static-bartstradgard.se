@@ -7,7 +7,7 @@
  To run it use this command:
 
 ```sh
-npx run dev
+npm run dev
 ```
 
 It runs on localhost:3001
@@ -16,5 +16,5 @@ It runs on localhost:3001
 If you want to build this repository run:
 
 ```sh
-npx run build
+npm run build
 ```
