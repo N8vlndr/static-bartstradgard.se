@@ -14,19 +14,11 @@
     <meta name='description' content='Barts trädgårdsservice i Osby hjälper med alla jobb som finns in trädgården.'>
     <meta name='author' content='Evelyn Surstedt'>
 
-    <!-- Scripts
-            ================================================== -->
-    <script defer src='script/contact.js'></script>
-    <script defer src='script/navigation.js'></script>
-
     <!-- Stylesheet
         ================================================== -->
     <link rel='stylesheet' type='text/css' href='style/core.css'>
     <link rel='stylesheet' type='text/css' href='style/navigation.css'>
     <link rel='stylesheet' type='text/css' href='style/hero.css'>
-    <link rel='stylesheet' type='text/css' href='style/services.css'>
-    <link rel='stylesheet' type='text/css' href='style/side-by-side.css'>
-    <link rel='stylesheet' type='text/css' href='style/contact.css'>
     <link rel='stylesheet' type='text/css' href='style/footer.css'>
 </head>
 
@@ -40,146 +32,22 @@
             <a href='#hero' class='logo' aria-label='tillbaka till hem'>
                 <img src='brand/logo.png' alt='logo' width='210' height='210' aria-hidden='true' decoding='async'>
             </a>
-            <!--Navigation List-->
-            <nav class='nav' role='navigation'>
-                <!--Mobile Nav Toggle-->
-                <button class='toggle' aria-label='mobile menu toggle'>
-                    <div class='box' aria-hidden='true'>
-                        <span class='line line1' aria-hidden='true'></span>
-                        <span class='line line2' aria-hidden='true'></span>
-                        <span class='line line3' aria-hidden='true'></span>
-                    </div>
-                </button>
-                <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-                <div class='ul-wrapper'>
-                    <ul id='expanded' class='ul' aria-expanded='false'>
-                        <li class='li'>
-                            <a href='#hero' class='li-link active' aria-label='tillbaka till hem'>
-                                Hem
-                            </a>
-                        </li>
-                        <li class='li'>
-                            <a href='#sbs-service-1' class='li-link' aria-label='läs mer om skötsel'>
-                                Skötsel
-                            </a>
-                        </li>
-                        <li class='li'>
-                            <a href='#sbs-service-2' class='li-link' aria-label='läs mer om gräsmattan'>
-                                Gräsmatta
-                            </a>
-                        </li>
-                        <li class='li'>
-                            <a href='#sbs-service-3' class='li-link' aria-label='läs mer om träd och buskar'>
-                                Träd & Buskar
-                            </a>
-                        </li>
-                        <li class='li'>
-                            <a href='#sbs-service-4' class='li-link' aria-label='läs mer om städningen'>
-                                Städning
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <a href='#contact' class='button-solid nav-button' aria-label='Kontakta oss'>Kontakta oss</a>
         </div>
     </header>
 
     <!-- ============================================ -->
-    <!--          Hero + Services                     -->
+    <!--          Hero                                -->
     <!-- ============================================ -->
     <section id='hero'>
         <div class='container'>
             <div class='content'>
-                <span class='topper'>Vi skapar en hållbar miljö i din trädgård
-                </span>
                 <h2 class='title'>Barts trädgårdsservice</h2>
                 <p class='text'>
-                    Vi utför hela jobbet åt dig. Vi hjälper dig också eller ger bara råd. Så som du
-                    önskar. Extra fördelaktigt
-                    med RUT-avdrag.
+                    Tyvärr har jag avslutat min verksamhet på grund av fysiska besvär. Jag tackar alla mina kunder för att jag fick hjälpa er med era trädgårdar.
                 </p>
-                <p class='text'>Boka direkt ett kostnadsfritt möte hemma hos dig!</p>
+                <p class='text'>Jag önskar er en vacker och hållbar trädgård!</p>
             </div>
-            <a href='#contact' class='button-solid' aria-label='Kontakta oss'>Kontakta oss</a>
         </div>
-        <!--Services-->
-        <section id='services'>
-            <div class='container'>
-                <ul class='card-group'>
-                    <li class='item'>
-                        <div class='flex'>
-                            <picture class='wrapper'>
-                                <img class='icon' aria-hidden='true' loading='lazy' decoding='async'
-                                    src='icon/skotsel.png' alt='icon' width='70' height='70'>
-                            </picture>
-                            <h3 class='h3'>Skötsel</h3>
-                            <p class='item-text'>Vi hjälper dig att skapa glädje i din
-                                trädgård.</p>
-                            <a href='#sbs-service-1' class='link' aria-label='Läs mer om skötsel'>Läs mer</a>
-                        </div>
-                        <picture class='picture'>
-                        <source media='(max-width: 600px)' srcset='img/fjarilsolblomma-small.jpg'>
-                        <source media='(min-width: 601px)' srcset='img/fjarilsolblomma-small.jpg'>
-                        <img aria-hidden='true' loading='lazy' decoding='async' src='img/fjarilsolblomma-small.jpg'
-                            alt='fjäril på solblomma' width='345' height='428'>
-                        </picture>
-                    </li>
-                    <li class='item'>
-                        <div class='flex'>
-                            <picture class='wrapper'>
-                                <img class='icon' aria-hidden='true' loading='lazy' decoding='async'
-                                    src='icon/grasmattan.png' alt='icon' width='70' height='70'>
-                            </picture>
-                            <h3 class='h3'>Gräsmatta</h3>
-                            <p class='item-text'>Vi hjälper dig med en fin, grön gräsmatta.</p>
-                            <a href='#sbs-service-2' class='link' aria-label='Läs mer om gräsmattan'>Läs mer</a>
-                        </div>
-                        <picture class='picture'>
-                            <source media='(max-width: 600px)' srcset='img/grasklippare-small.jpg'>
-                            <source media='(min-width: 601px)' srcset='img/grasklippare-small.jpg'>
-                            <img aria-hidden='true' loading='lazy' decoding='async' src='img/grasklippare-small.jpg'
-                                alt='gräsklippare' width='345' height='428'>
-                        </picture>
-                    </li>
-                    <li class='item'>
-                        <div class='flex'>
-                            <picture class='wrapper'>
-                                <img class='icon' aria-hidden='true' loading='lazy' decoding='async' src='icon/trad.png'
-                                    alt='icon' width='70' height='70'>
-                            </picture>
-                            <h3 class='h3'>Träd & Buskar</h3>
-                            <p class='item-text'>Vi hjälper dig att forma, klippa och vårda dina träd och buskar.
-                            </p>
-                            <a href='#sbs-service-3' class='link' aria-label='Läs mer om träd och buskar'>Läs mer</a>
-                        </div>
-                        <picture class='picture'>
-                            <source media='(max-width: 600px)' srcset='img/trad-small.jpg'>
-                            <source media='(min-width: 601px)' srcset='img/trad-small.jpg'>
-                            <img aria-hidden='true' loading='lazy' decoding='async' src='img/trad-small.jpg' alt='träd'
-                                width='345' height='428'>
-                        </picture>
-                    </li>
-                    <li class='item'>
-                        <div class='flex'>
-                            <picture class='wrapper'>
-                                <img class='icon' aria-hidden='true' loading='lazy' decoding='async' src='icon/stadning.png'
-                                    alt='icon' width='70' height='70'>
-                            </picture>
-                            <h3 class='h3'>Städning</h3>
-                            <p class='item-text'>Vi hjälper dig att städa hela trädgården.</p>
-                            <a href='#sbs-service-4' class='link' aria-label='Läs mer om städningen'>Läs mer</a>
-                        </div>
-                        <picture class='picture'>
-                            <source media='(max-width: 600px)' srcset='img/graskamm-small.jpg'>
-                            <source media='(min-width: 601px)' srcset='img/graskamm-small.jpg'>
-                            <img aria-hidden='true' loading='lazy' decoding='async' src='img/graskamm-small.jpg'
-                                alt='Trädgårdsdamm' width='345' height='428'>
-                        </picture>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
         <!-- Background Image, also in CSS for desktop parallax effect -->
         <picture class='background'>
@@ -189,253 +57,13 @@
                 aria-hidden='true'>
         </picture>
     </section>
-    <!-- ============================================ -->
-    <!--                Side By Side                  -->
-    <!-- ============================================ -->
-
-    <section id='sbs-service-1'>
-        <div class='container'>
-            <div class='content'>
-                <span class='topper'>Skötsel</span>
-                <h2 class='title'>Bara njut av din trädgård.
-                </h2>
-                <p class='text'>
-                    Vi gör de flesta jobb som finns i trädgården och hjälper dig att skapa glädje i din
-                    trädgård. Vi
-                    hjälper dig med bl.a. gräsklippning, ogräsrensning, städning, plantering, klippa ner perenner,
-                    jordanalys,
-                    jordförbättring, kompostering,
-                    skötselplan och råd.
-                </p>
-                <a href='#contact' class='button-solid' aria-label='Kontakta oss'>Kontakta oss</a>
-            </div>
-            <picture class='picture'>
-                <source media='(max-width: 600px)' srcset='img/fjarilsolblomma-small.jpg'>
-                <source media='(min-width: 601px)' srcset='img/fjarilsolblomma.jpg'>
-                <img aria-hidden='true' loading='lazy' decoding='async' src='img/fjarilsolblomma.jpg'
-                    alt='en fjäril på en solblomma' width='649' height='617'>
-            </picture>
-        </div>
-    </section>
-    <section id='sbs-service-2'>
-        <div class='container'>
-            <div class='content'>
-                <span class='topper'>Gräsmatta</span>
-                <h2 class='title'>Få en fin och grön gräsmatta.
-                </h2>
-                <p class='text'>
-                    Vi hjälper dig med hela skötseln av din gräsmatta. Vi kan reparera fläckar, gödsla vid behov och
-                    klippa gräs och kanter.
-                </p>
-                <a href='#contact' class='button-solid' aria-label='Kontakta oss'>Kontakta oss</a>
-            </div>
-            <picture class='picture'>
-                <source media='(max-width: 600px)' srcset='img/grasklippare-small.jpg'>
-                <source media='(min-width: 601px)' srcset='img/grasklippare.jpg'>
-                <img aria-hidden='true' loading='lazy' decoding='async' src='img/grasklippare.jpg'
-                    alt='detaljbild på en gräsklippare' width='649' height='617'>
-            </picture>
-        </div>
-    </section>
-    <section id='sbs-service-3'>
-        <div class='container'>
-            <div class='content'>
-                <span class='topper'>Träd & Buskar</span>
-                <h2 class='title'>Få vackra, välformade, välmående träd och buskar.
-                </h2>
-                <p class='text'>
-                    Vi är specialister på beskärning av träd och buskar. Det är viktigt att titta på vad trädet eller
-                    busken behöver och vad som är möjligt. Vi hjälper dig också med häckklippning, röjning,
-                    skapa en skötselplan och ger råd.
-                </p>
-                <a href='#contact' class='button-solid' aria-label='Kontakta oss'>Kontakta oss</a>
-            </div>
-            <picture class='picture'>
-                <source media='(max-width: 600px)' srcset='img/trad-small.jpg'>
-                <source media='(min-width: 601px)' srcset='img/trad.jpg'>
-                <img aria-hidden='true' loading='lazy' decoding='async' src='img/trad.jpg' alt='ett stort vackert träd'
-                    width='649' height='617'>
-            </picture>
-        </div>
-    </section>
-    <section id='sbs-service-4'>
-        <div class='container'>
-            <div class='content'>
-                <span class='topper'>Städning</span>
-                <h2 class='title'>Få en välskött trädgård.
-                </h2>
-                <p class='text'>
-                    Vi kan rensa ogräs, luckra upp jorden och blåsa bort löv.
-                    Vi kan skaffa bort trädgårdsavfall åt dig, men vi hjälper dig också gärna att skapa en komposthög
-                    så att du få en kretslopp id in trädgård. Dina växter blir väldigt glad av det.
-                </p>
-                <a href='#contact' class='button-solid' aria-label='Kontakta oss'>Kontakta oss</a>
-            </div>
-            <picture class='picture'>
-                <source media='(max-width: 600px)' srcset='img/graskamm-small.jpg'>
-                <source media='(min-width: 601px)' srcset='img/graskamm.jpg'>
-                <img aria-hidden='true' loading='lazy' decoding='async' src='img/graskamm.jpg'
-                    alt='en höstlig bild med en gräskamm' width='649' height='617'>
-            </picture>
-        </div>
-    </section>
-    <!-- ============================================ -->
-    <!--                   Contact                    -->
-    <!-- ============================================ -->
-
-    <section id='contact'>
-        <div class='container'>
-            <div class='content'>
-                <span class='topper'>Kontakta oss</span>
-                <h2>Så här gör vi:
-                </h2>
-                <p class='text'>
-                    När du kontaktar oss kommer vi gärna på plats till dig. Då kan du berätta om dina önskemål. Vi ger
-                    dig råd
-                    och våra förslag. Du bestämmer, vi gör jobbet.
-                    Vi hjälper dig hela vägen. Är du nöjd med oss? Berätta för andra! Är du inte nöjd? Berätta för oss!
-                </p>
-                <ul class='ul'>
-                    <li class='li'>
-                        <picture class='icon-wrapper'>
-                            <a href='tel:+46703075955' class='link' target='_blank' aria-label='Ring oss direkt'>
-                                <img aria-hidden='true' src='icon/phone.png' alt='phone icon' class='icon' width='50'
-                                    height='50' decoding='async'>
-                            </a>
-                        </picture>
-                        <div class='flex-group'>
-                            <span class='header'>Mobil</span>
-                            <a href='tel:+46703075955' class='link' target='_blank'>070 - 3075 955
-                            </a>
-                        </div>
-                    </li>
-                    <li class='li'>
-                        <picture class='icon-wrapper'>
-                            <a href='mailto:info@bartstradgard.se' class='link' target='_blank'
-                                aria-label='Skicka oss en majl'>
-                                <img aria-hidden='true' src='icon/email.png' alt='address icon' class='icon' width='50'
-                                    height='50' decoding='async'>
-                            </a>
-                        </picture>
-                        <div class='flex-group'>
-                            <span class='header'>E-post</span>
-                            <a href='mailto:info@bartstradgard.se' class='link'
-                                target='_blank'>info@bartstradgard.se</a>
-                        </div>
-                    </li>
-                    <li class='li'>
-                        <picture class='icon-wrapper'>
-                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target='_blank'
-                                aria-label='Vår adress på Google maps'>
-                                <img aria-hidden='true' src='icon/location.png' alt='address icon' class='icon'
-                                    width='50' height='50' decoding='async'>
-                            </a>
-                        </picture>
-                        <div class='flex-group'>
-                            <span class='header'>Adress</span>
-                            <a href='https://maps.app.goo.gl/dexdUS3wQQShsmpHA' class='link' target='_blank'>
-                                Östra
-                                Genastorp 3531, 28391
-                                Osby</a>
-                        </div>
-                    </li>
-                </ul>
-                <h2>Vem är Bart?
-                </h2>
-                <p class='text'>
-                    Jag kommer från Nederländerna och har bott i Sverige sedan 2022. Jag älskar att vara aktiv i
-                    den vackra svenska
-                    naturen med mina nära och kära. Inhemska växter och mångfald är viktiga för mig.
-                    Så skapar vi en vacker och hållbar trädgård med lysande färger året om och
-                    en bra miljö för allt liv.
-                </p>
-            </div>
-            <!--Form-->
-            <form class='form' id='contact-form' method='POST'>
-                <input type='hidden' name='access_key' value='29ce4488-f638-44b8-931d-0aaacbc8a2be' />
-                <h3 class='h3'>Vill du ha kontakt?</h3>
-                <label for='name' class='label name'>
-                    Namn
-                    <input class='input' required type='text' id='name' name='name' placeholder='Namn'>
-                </label>
-                <label for='email' class='label email'>
-                    E-post
-                    <input class='input' required type='email' id='email' name='email' placeholder='jag@email.com'>
-                </label>
-                <label for='phone' class='label phone'>
-                    Telefonnummer (om du helst vill bli uppringd)
-                    <input class='input' type='text' id='phone' name='Telefonnummer' placeholder='010-1234567'>
-                </label>
-                <label for='message' class='label message'>
-                    Meddelande (valfritt)
-                    <textarea class='input textarea' name='Meddelande' id='message'
-                        placeholder='Skriv ditt meddelande här...'></textarea>
-                </label>
-                <input type='checkbox' name='botcheck' id='' style='display: none;'>
-                <button class='button-solid submit' id='send-btn' type='submit' aria-label='Skicka'>Skicka
-                </button>
-                <p id='result' class='result'></p>
-            </form>
-        </div>
-    </section>
 
     <!-- ============================================ -->
     <!--                  Footer                      -->
     <!-- ============================================ -->
     <footer id='footer'>
         <div class='container'>
-            <div class='top'>
-                <a aria-label='tillbaka till hem' class='logo' href='#hero'>
-                    <img class='logo-img' loading='lazy' decoding='async' src='brand/logo.png' alt='logo' width='168'
-                        height='48'>
-                </a>
-                <ul class='ul'>
-                    <li class='li'>
-                        <a href='#hero' class='link' aria-label='tillbaka till Hem'>Hem</a>
-                    </li>
-                    <li class='li'>
-                        <a href='#sbs-service-1' class='link' aria-label='till Skötsel'>Skötsel</a>
-                    </li>
-                    <li class='li'>
-                        <a href='#sbs-service-2' class='link' aria-label='till Gräsmattan'>Gräsmatta</a>
-                    </li>
-                    <li class='li'>
-                        <a href='#sbs-service-3' class='link' aria-label='till Träd och Buskar'>Träd & Buskar</a>
-                    </li>
-                    <li class='li'>
-                        <a href='#sbs-service-4' class='link' aria-label='till städningen'>Städning</a>
-                    </li>
-                    <li class='li'>
-                        <a href='#contact' class='link' aria-label='Kontakta oss'>Kontakta oss</a>
-                    </li>
-                </ul>
-            </div>
             <div class='bottom'>
-                <!--Social-->
-                <ul class='social'>
-                    <li class='social-li'>
-                        <a href='https://www.facebook.com/profile.php?id=61557841125961' class='social-link'
-                            aria-label='Barts trädgårdsservice på Facebook' target='_blank' rel='noopener'>
-                            <img class='social-icon default' src='icon/facebook.svg' alt='icon' loading='lazy'
-                                decoding='async' width='12' height='12' aria-hidden='true'>
-                        </a>
-                    </li>
-                    <li class='social-li'>
-                        <a href='https://www.instagram.com/bartstradgard' class='social-link'
-                            aria-label='Barts trädgårdsservice på instagram' target='_blank' rel='noopener'>
-                            <img class='social-icon default' src='icon/instagram.svg' alt='icon' loading='lazy'
-                                decoding='async' width='12' height='12' aria-hidden='true'>
-                        </a>
-                    </li>
-                    <li class='social-li'>
-                        <a href='https://wa.me/46703075955' class='social-link'
-                            aria-label='Skicka Barts trädgårdsservice ett meddelande på whatsapp' target='_blank'
-                            rel='noopener'>
-                            <img class='social-icon default' src='icon/whatsapp.svg' alt='icon' loading='lazy'
-                                decoding='async' width='12' height='12' aria-hidden='true'>
-                        </a>
-                    </li>
-                </ul>
                 <span class='copyright'>
                     © Copyright 2024 - Webbsida och fotografi: <a href='https://se.linkedin.com/in/evelien-surstedt'
                         class='copyright-link'>Evelyn Surstedt</a>
